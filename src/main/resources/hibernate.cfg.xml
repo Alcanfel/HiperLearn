@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="connection.url">jdbc:sqlserver://Attenuator;databaseName=JavaSber</property>
+        <property name="connection.username"></property>
+        <property name="connection.password"></property>
+        <property name="show_sql">false</property>
+        <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="connection.pool_size">5</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="Entities.School"/>
+        <mapping class="Entities.Child"/>
+        <mapping class="Entities.Person"/>
+        <mapping class="Entities.Passport"/>
+        <mapping class="Entities.Address"/>
+        <mapping class="Entities.Street"/>
+        <mapping class="Entities.TownShip"/>
+    </session-factory>
+</hibernate-configuration>
